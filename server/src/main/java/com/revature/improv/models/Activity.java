@@ -5,6 +5,14 @@ public class Activity {
   private Integer activityId;
   
   private String name;
+  
+  
+
+  public Activity(Integer activityId, String name) {
+    super();
+    this.activityId = activityId;
+    this.name = name;
+  }
 
   public Integer getActivityId() {
     return activityId;
