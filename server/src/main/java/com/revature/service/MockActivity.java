@@ -2,6 +2,7 @@ package com.revature.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import org.springframework.stereotype.Service;
 import com.revature.improv.models.Activity;
 
@@ -37,6 +38,11 @@ public class MockActivity {
       throw new RuntimeException("No Activities with the id #" + id + " were found.");
     }
     return out;
+  }
+  
+  public Activity getRandomActivity() {
+    Random rand = new Random();
+    return activities.get(rand.nextInt(activities.size()));
   }
   
 }

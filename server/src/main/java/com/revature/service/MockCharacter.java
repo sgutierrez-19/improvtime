@@ -2,6 +2,7 @@ package com.revature.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import com.revature.improv.models.Characters;
 
 public class MockCharacter {
@@ -46,5 +47,11 @@ public class MockCharacter {
     }
     return out;
   }
+  
+  public Characters getRandomCharacter() {
+    Random rand = new Random();
+    return characters.get(rand.nextInt(characters.size()));
+  }
+
 
 }
