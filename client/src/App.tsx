@@ -8,11 +8,13 @@ import { NavbarComp } from "./components/NavbarComp";
 
 function App() {
   return (
-    <Container>
+    <>
       <NavbarComp />
-      <MainPage />
+      <Container>
+        <MainPage />
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 }
 
