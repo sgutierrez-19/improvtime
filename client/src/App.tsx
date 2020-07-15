@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Container } from "reactstrap";
+import { Container, Navbar } from "reactstrap";
+import { MainPage } from "./components/MainPage";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <Container>
-      <NavBar />
+      <Navbar />
       <MainPage />
       <Footer />
     </Container>
