@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavbarComp />
-      <Container>
+      <Container className="main-container">
         <MainPage />
       </Container>
       <Footer />
